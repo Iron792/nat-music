@@ -1,0 +1,26 @@
+[project]
+name = "nat-music"
+version = "1.0.0"
+description = "Nat Music — Refined Telegram Voice & Video Chat Music Bot powered by Pyrogram and PyTgCalls"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "pyrofork>=2.3.45",
+    "tgcrypto>=1.2.5",
+    "py-tgcalls>=2.0.6",
+    "yt-dlp>=2025.1.15",
+    "aiohttp>=3.10.0",
+    "aiosqlite>=0.20.0",
+    "python-dotenv>=1.0.1",
+    "pillow>=10.4.0",
+    "psutil>=6.0.0",
+]
+
+[project.optional-dependencies]
+mongo = ["motor>=3.6.0"]
+dev = ["pytest>=8.0.0", "pytest-asyncio>=0.24.0"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

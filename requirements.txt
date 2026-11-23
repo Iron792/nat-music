@@ -1,0 +1,11 @@
+pyrofork>=2.3.45
+tgcrypto>=1.2.5
+py-tgcalls>=2.0.6
+yt-dlp>=2025.1.15
+aiohttp>=3.10.0
+aiosqlite>=0.20.0
+python-dotenv>=1.0.1
+pillow>=10.4.0
+psutil>=6.0.0
+# Optional MongoDB backend:
+# motor>=3.6.0
